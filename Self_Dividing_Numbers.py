@@ -1,8 +1,8 @@
 def seldivnum(num):
-    tem=num
-    while tem:
-        d=tem%10
-        tem=tem//10
+    temp=num
+    while temp:
+        d=temp%10
+        temp=temp//10
         if d==0 or num%d!=0:
             return False
     return True
