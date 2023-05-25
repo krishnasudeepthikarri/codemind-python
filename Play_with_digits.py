@@ -5,6 +5,5 @@ for num in lst:
     while num!=0:
         rem=num%10
         num=num//10
-        s=s+rem
+        s+=rem
 print(s)
-        
