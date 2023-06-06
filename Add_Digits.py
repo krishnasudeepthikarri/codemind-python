@@ -1,11 +1,12 @@
-num=int(input())
-sum=0
-while num>9:
-    sum=0
-    while num:
-        remainder=num%10
-        num=num//10
-        sum=sum+remainder
-    num=sum
-print(sum)
-    
+def add(n):
+    s=0
+    while n!=0:
+        rem=n%10
+        n//=10
+        s+=rem
+    if s<=9:
+        return s
+    else:
+        return add(s)
+n=int(input())
+print(add(n))
