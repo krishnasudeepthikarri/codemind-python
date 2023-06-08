@@ -1,5 +1,5 @@
 n=int(input())
-sum=0
+s=0
 for i in range(n):
     if i*(i+1)==n:
         sum=1
