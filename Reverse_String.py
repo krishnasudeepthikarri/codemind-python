@@ -1,4 +1,2 @@
-n=input()
-x=n.split(' ')
-a=x[::-1]
-print(*a)
+s=input()
+print(s[::-1])
