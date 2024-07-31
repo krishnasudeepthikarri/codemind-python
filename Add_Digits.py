@@ -1,12 +1,9 @@
-def add(n):
+num=int(input())
+while num>9:
     s=0
-    while n!=0:
-        rem=n%10
-        n//=10
-        s+=rem
-    if s<=9:
-        return s
-    else:
-        return add(s)
-n=int(input())
-print(add(n))
+    while num!=0: #1
+        rem=num%10 #1
+        num=num//10 #0
+        s+=rem #s=11
+    num=s
+print(s)
